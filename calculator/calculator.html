@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimalist Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/css/calculator.css" />
+</head>
+<body>
+
+  <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+    <span class="mode-icon">☀️</span>
+  </button>
+
+  <main class="calc-container">
+    <input type="text" id="display" placeholder="0" readonly />
+    
+    <div class="buttons">
+      <button class="btn btn-secondary" data-action="clear">C</button>
+      <button class="btn btn-secondary" data-action="delete">⌫</button>
+      <button class="btn btn-secondary" data-val="/">/</button>
+      <button class="btn btn-secondary" data-val="*">×</button>
+
+      <button class="btn" data-val="7">7</button>
+      <button class="btn" data-val="8">8</button>
+      <button class="btn" data-val="9">9</button>
+      <button class="btn btn-secondary" data-val="-">-</button>
+
+      <button class="btn" data-val="4">4</button>
+      <button class="btn" data-val="5">5</button>
+      <button class="btn" data-val="6">6</button>
+      <button class="btn btn-secondary" data-val="+">+</button>
+
+      <button class="btn" data-val="1">1</button>
+      <button class="btn" data-val="2">2</button>
+      <button class="btn" data-val="3">3</button>
+      
+      <button class="btn btn-equal" data-action="calculate">=</button>
+
+      <button class="btn btn-zero" data-val="0">0</button>
+      <button class="btn" data-val=".">.</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>by Abdur Rahman</p>
+  </footer>
+
+  <script src="./asset/js/calculator.js"></script>
+</body>
+</html>
